@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Scoops Ahoy!</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="chat/index.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <nav></nav>
+    </header>
+    <h1>Scoops Ahoy</h1>
+
+
+    <h1>Demos</h1>
+    <div>
+      <img class="carousel__image" src="./assets/st1.png" />
+      <img class="carousel__image hide-photo" src="./assets/st2.png" />
+      <img class="carousel__image hide-photo" src="./assets/st3.png" />
+      <img class="carousel__image hide-photo" src="./assets/st4.png" />
+      <div class="carousel__btn-container">
+        <button class="btn previous-button">Previous</button>
+        <button class="btn next-button">Next</button>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="testChat">
+    <div id="messages"></div>
+    <input id="chat-input" type="text" placeholder="say anything" autofocus />
+  </section>
+
+  <script src="https://media.twiliocdn.com/sdk/js/common/v0.1/twilio-common.min.js"></script>
+  <script src="https://media.twiliocdn.com/sdk/js/chat/v3.0/twilio-chat.min.js"></script>
+  <script src="scripts/chat.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</script>

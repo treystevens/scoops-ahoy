@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin-bottom: 10rem;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 500px
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+.hide-photo {
+    display: none;
+}
+
+.carousel__btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#chatDemoButton {
+    display: inline-block;
+    margin-top: 2rem
+}
