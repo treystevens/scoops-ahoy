@@ -1,7 +1,7 @@
 const clientMessages = require('../src/clientMessages');
 const mockIceCreamData = require('../mockIceCreamData');
 const constants = require('../constants');
-const { CLIENT, RESPONSE, ZIPCODE, API } = constants;
+const { RESPONSE, ZIPCODE } = constants;
 
 test('Should return "Scoops Ahoy!" when given "Scoops Ahoy"', () => {
   const expected = clientMessages.response('Scoops Ahoy');
