@@ -39,9 +39,8 @@ function processIceCreamStores(data, zipCode) {
       }
 
       const mappedStores = filteredZipCodes.map(store => {
-        const { address, name, url } = store;
+        const { address, name } = store;
         const storeLocation = RESPONSE.storeLocation(name, address);
-        const visitURL = RESPONSE.url(url);
 
         return storeLocation;
       });
