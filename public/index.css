@@ -2,14 +2,25 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
 
-.container {
-    margin-bottom: 10rem;
+.title {
+    text-align: center
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .carousel__image {
     width: 100%;
-    height: 500px
+    margin: 1rem 0;
 }
 
 .btn {
@@ -28,7 +39,146 @@
     justify-content: space-between;
 }
 
-#chatDemoButton {
+
+.img {
+    width: 100%
+}
+
+.flags {
+    display: none;
+}
+
+
+.cloud {
+    position: absolute;
+}
+
+.cloud__one {
+    top: 55px;
+    left: -10px;
+}
+
+.cloud__two {
+    right: 10px
+}
+
+.cloud__three {
+    top: 500px;
+    left: 60px;
+}
+
+.outer {
+    margin: 1rem auto 4rem auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-container {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background-color: #fff
+}
+
+
+/* CHAT */
+section input {
+    display: block;
+    height: 52px;
+    width: 100%;
+    margin: 10px auto;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #2B2B2A;
+    padding: 0;
+    font-size: 3rem;
+
+}
+
+#messages {
+    padding: 10px;
+    height: 80vh;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+}
+
+.info {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.message-container {
+    margin: 1rem 0;
+}
+
+.message-container .username {
     display: inline-block;
-    margin-top: 2rem
+    margin-right: 0.6rem;
+    font-weight: bold;
+}
+
+.me,
+.username.me {
+    font-weight: bold;
+    color: rgb(33, 62, 156);
+}
+
+.message-container .username.me {
+    display: inline-block;
+    margin-right: 0.6rem;
+}
+
+.chat {
+    padding: 4rem;
+    background-color: #1B8BFF;
+    position: relative;
+    top: -10px;
+}
+
+
+@media only screen and (min-width: 700px) {
+
+
+    .flags {
+        display: initial;
+        position: absolute;
+        top: 0;
+        right: -100px;
+        transform: rotate(45deg);
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 480px) {
+
+    .carousel {
+        width: 60%;
+    }
+
+    .cloud__one {
+        left: 0;
+        top: 100px;
+    }
+
+
+    .outer {
+        border-radius: 50%;
+        justify-content: center;
+        width: 400px;
+        height: 400px;
+        border: 1px solid #2B2B2A;
+        background: linear-gradient(135deg, #ffffff 25%, transparent 25%) -50px 0, linear-gradient(225deg, #ffffff 25%, transparent 25%) -50px 0, linear-gradient(315deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%);
+        background-size: 100px 100px;
+        background-color: #EC173A;
+    }
 }
