@@ -44,21 +44,6 @@ test('Should return invalid zip code message when given invalid zip', () => {
   expect(expected2).toEqual(result);
 });
 
-test('Should return invalid zip code message when given zip code outside of NYC', async () => {
-  const expected = promisify(mockIceCreamData);
-  const zipCode = '80808';
-  const result = '';
-  function promisify() {
-    return new Promise((resolve, reject) => {
-      resolve(mockIceCreamData);
-    });
-  }
-
-  await expect(
-    clientMessages.processIceCreamStores(expected, zipCode)
-  ).resolves.toBe(result);
-});
-
 test('Should return nothing when given valid NYC zip code, but no store locations are found', async () => {
   const expected = promisify(mockIceCreamData);
   const zipCode = '80808';
